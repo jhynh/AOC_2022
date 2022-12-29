@@ -34,6 +34,7 @@ void fileSys::printAll(){
                 }
                 cur->dSize = dSize;
 
+//dfs would have helped with composite directory sizes, i had not accounted for this, misread the prompt
                 if(dSize <= 100000){
                     fsSize += dSize;
                     if(cur->parent != nullptr && cur->parent->dSize <= 100000)
